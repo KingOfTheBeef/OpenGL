@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA966A54-D6F2-4E6E-91AC-500AB005827A}</ProjectGuid>
+    <RootNamespace>BattleRoyale</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="SDL2.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Arrow.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Barrel.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Bullet.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Button.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Drawer.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Game.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\InputHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\main.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\MainMenuState.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\MovableBlock.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\PauseGameState.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\PlayGameState.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Projectile.cpp" />
+    <ClCompile Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\waste.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Arrow.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Barrel.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\BaseGameState.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Bullet.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Button.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Drawer.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Game.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\GameObject.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\InputHandler.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\PauseGameState.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\PlayGameState.h" />
+    <ClInclude Include="MainMenuState.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\MovableBlock.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Projectile.h" />
+    <ClInclude Include="..\..\..\..\Jonathan%27s Stuff\C++\Battle Royale\Battle Royale\Structure.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
