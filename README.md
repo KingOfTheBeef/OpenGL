@@ -1,4 +1,7 @@
 # Battle Royale
+
+This is just where I (baky123) will be keeping my OpenGL code until it is fit to merge with the main branch.
+
 An attempt at an online Smash Bros/MOBA game in C++, using SDL, OpenGL and RakNet.
 
 We currently have 3 team members, but if you want to help feel free to fork.
